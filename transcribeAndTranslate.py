@@ -1,4 +1,6 @@
-from Bio.Seq import Seq
+# /usr/bin/env python
+
+import Bio.Seq
 from Bio.Alphabet import IUPAC
 
 
@@ -6,7 +8,7 @@ def transcribe_sequence(sequence):
     """Transcribes the given sequence.
     :param sequence: A string containing sequence
     :return Sequence: Stranded message RNA"""
-    coding_dna = Seq(sequence, IUPAC.unambiguous_dna)
+    coding_dna = Bio.Seq.Seq(sequence, IUPAC.unambiguous_dna)
     return coding_dna.transcribe()
 
 
