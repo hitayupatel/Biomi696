@@ -1,3 +1,5 @@
+#! /usr/bin/env python
+
 gap_penalty = -2
 match = 1
 mismatch = -1
